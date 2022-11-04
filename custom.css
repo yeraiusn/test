@@ -1,0 +1,549 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : 
+ Author : 
+ URL : http://
+
+ Last Updated : 
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+  --black: #040506;
+  --gold: #CBAA4C;
+  --white:  #ffffff;
+  --grey: #818282;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+CSS for Wufoo form on Skynbun website
+========================================================================== */
+/* Reset */
+*, *:before, *:after {
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+input, input:before, input:after {
+  -webkit-user-select: initial !important;
+  -khtml-user-select: initial !important;
+  -moz-user-select: initial !important;
+  -ms-user-select: initial !important;
+  user-select: initial !important;
+} 
+
+/* Placeholder text */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #8c8c8c;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #8c8c8c;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #8c8c8c;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #8c8c8c;
+}
+
+/* Link */
+a, a:visited, a:active {
+  transition: color 0.3s linear;
+
+  color: #ddbc22;
+}
+
+
+
+
+/* Header */
+.info {
+  display: none !important;
+}
+
+/* Grid */
+.wufoo li {
+  padding: 30px 0 0;
+  width: 100% !important;
+}
+
+.noI form li.phone {
+  width: calc(66.66% - 10px) !important;
+  padding: 50px 0 0;
+}
+
+.noI form li.postalcode {
+  width: calc(66.66% - 10px) !important;
+}
+
+.noI form li.prefecture, .noI form li.city {
+  width: calc(50% - 10px) !important;
+  float: left;
+  clear: none;
+}
+
+.noI form li.prefecture {
+  padding-right: 10px;
+}
+
+.noI form li.city {
+  padding-left: 10px;
+}
+
+.noI form li.building {
+  padding-left: 10px;
+  padding: 50px 0 0;
+}
+
+.noI form li.age {
+  width: calc(50% - 10px) !important;
+}
+
+#instruct24 {
+  font-family: Noto Sans Japanese,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,MS PGothic,Arial Unicode MS,Tahoma,Helvetica,sans-serif;
+  margin-bottom: 30px;
+  font-size: 12px;
+  padding: 0;
+}
+
+#title37 {
+  border-top: none !important;
+  margin: 0 !important;
+}
+
+#title24 {
+  margin: 40px 0 40px !important;
+}
+
+#fo1li37 #instruct37 {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #73737C;
+  font-size: 12px;
+}
+
+/* Textfield */
+.wufoo input.text {
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+
+  width: calc(100% - 32px) !important;
+  line-height: 1.2 !important;
+  text-align: left !important;
+  border: 1px solid #bd9c04;
+  background: #fff;
+  text-shadow: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.wufoo input.text:focus{
+  border: 1px solid #e1be1a;
+  outline: none;
+}
+
+/* Textfield title */
+.wufoo label.desc, .wufoo legend.desc {
+  font-family: Noto Sans Japanese,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,MS PGothic,Arial Unicode MS,Tahoma,Helvetica,sans-serif;
+  padding-bottom: 2px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #595959;
+}
+
+form span.req {
+  color: #bd9c04 !important;
+}
+
+/* Divider */
+form li.section h3 { 
+  margin: 0 30px !important;
+  padding: 0 !important; 
+}
+
+.wufoo .section h3 {
+  border-top: 1px solid #bfbfbf !important;
+}
+
+#title25 {
+  font-weight: 600;
+}
+
+/* Dropdown */
+.wufoo select.select  {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: #FFFFFF url(https://s3-ap-northeast-1.amazonaws.com/ansell/skynbun/wufoo/dropdown.svg) !important;
+  background-position: 90%, 100% !important;
+  background-repeat: no-repeat !important;
+  background-size: 12px !important;
+  padding: 0 15px !important;
+  font-size: 16px !important;
+  border: 1px solid #c4a928;
+  border-radius: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.wufoo select.select:focus{
+  border: 1px solid #e1be1a;
+  outline: none;
+}
+
+/* Radio buttons */
+input.checkbox, input.radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 4px 0 0 0 !important;
+  border: 2px solid #c4a928;
+  background: #eceeed;  
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"]:checked {
+  background-color: #c4a928;
+}
+
+input.checkbox, input.radio:focus {
+  outline: none;
+}
+
+.wufoo label.choice {
+  font-family: Noto Sans Japanese,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,MS PGothic,Arial Unicode MS,Tahoma,Helvetica,sans-serif;
+  margin: -25px 0 0 30px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+form li div span { 
+  margin-top: 15px;
+  width: 100%;
+}
+
+form li div span:first-child { 
+  margin-top: 0;
+}
+
+/* Submit button */
+form li.buttons {
+  padding: 40px 1% 10px 1%;
+}
+  
+.wufoo input.btTxt {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: Noto Sans Japanese,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,MS PGothic,Arial Unicode MS,Tahoma,Helvetica,sans-serif;
+  background-color: #bd9c04; 
+  padding: 15px 50px;
+  border-radius: 0;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+}
+
+/* Error style */
+/* Top error message */
+#errorLi, .error-container {
+  font-family: Noto Sans Japanese,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,MS PGothic,Arial Unicode MS,Tahoma,Helvetica,sans-serif;
+  background: rgba(0,0,0,0) !important;
+  margin: 0 auto 15px auto;
+  border-radius: 0;
+  text-align: left;
+  border: none;
+  padding: 0;
+}
+
+#errorMsgLbl {
+  font-weight: 100 !important;
+  color: #d72528 !important;
+  font-size: 14px;
+}
+
+#errorMsg {
+  display: none;
+}
+
+/* Field */
+form li.error .desc {
+  color: #59595B !important;
+}
+
+.error label.desc {
+  font-weight: 100 !important;
+}
+
+form li.error {
+  background-color: rgba(0,0,0,0) !important;
+  margin-bottom: 0 !important;
+}
+
+form li.error p.error {
+  font-family: Noto Sans Japanese,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,MS PGothic,Arial Unicode MS,Tahoma,Helvetica,sans-serif;
+  font-weight: 100 !important;
+  color: #d72528 !important;
+}
+
+/* ==========================================================================
+Tablet & Desktop Mediaqueries
+========================================================================== */
+
+@media screen and (min-width: 500px) {
+  /* Grid */
+  .wufoo li {
+    padding: 30px 0 0;
+    width: 50%;
+  }
+
+  .noI form li.name, .noI form li.phone {
+    padding-top: 0;
+    float: left;
+    clear: none;
+  }
+
+  .noI form li.name {
+    width: calc(100% / 3 + 15px) !important;;
+    padding-right: 15px;
+  }
+
+  .noI form li.phone {
+    width: calc(100% / 3) !important;;
+    padding-left: 15px;
+  }
+
+  .noI form li.postalcode, .noI form li.city {
+    width: calc(100% / 3 - 15px) !important;
+    float: left;
+    clear: none;
+  }
+  
+  .noI form li.postalcode {
+    padding-right: 15px;
+    clear: left;
+  }
+
+  .noI form li.prefecture {
+    width: calc(100% / 3 - 30px) !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    clear: none;
+  }
+
+  .noI form li.city {
+    padding-left: 15px;
+  }
+
+  .noI form li.address, .noI form li.building {
+    width: calc(50% - 15px) !important;;
+    padding-top: 80px;
+    float: left;
+    clear: none;
+  }
+
+  .noI form li.address {
+    padding-right: 15px;
+  }
+
+  .noI form li.building {
+    padding-left: 15px;
+  }
+  
+  .noI form li.age {
+    width: calc(100% / 3 - 15px) !important;
+  }
+
+  #title24 {
+    margin: 40px 0 40px !important;
+  }
+
+  #instruct24 {   
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+
+  #fo1li37 #instruct37 {
+    padding: 0 0 20px !important;
+    margin: 0 !important;
+    font-size: 14px;
+  }
+
+  /* Link */
+  a:active {
+    transition: color 0.3s linear;
+
+    color: #d6b314;
+  }
+
+  /* Textfield */
+  .wufoo input.text {
+    width: calc(100% - 52px) !important;
+    padding: 12px 15px;
+    font-size: 18px;
+  }
+
+  /* Textfield title */
+  .wufoo label.desc, .wufoo legend.desc {
+    padding-bottom: 12px;
+    font-size: 16px;
+  }
+
+  /* Radio buttons */
+  .wufoo label.choice {
+    padding-top: 3px;
+    font-size: 16px;
+  }
+
+  form li div span {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  form li div span:nth-last-child(-n+2) {
+    margin-top: 25px !important;
+  }
+
+  /* Divider */
+  form li.section h3 { 
+    margin: 40px 0 40px !important;
+    padding: 0 !important; 
+  }
+
+  .wufoo .section h3 {
+    border-top: 2px solid #bfbfbf !important;
+  }
+
+  /* Dropdown */
+  .safari .wufoo select.select  {
+    background-size: 16px !important;
+    padding: 0 25px !important;
+    font-size: 18px !important;
+    height: 48px;
+  }
+
+  /* Submit button */
+  form li.buttons {
+    padding: 40px 1% 10px 1%;
+  }
+
+  .wufoo input.btTxt {
+    padding: 20px 60px;
+    font-size: 18px;
+  }
+
+  /* Error style */
+  /* Top error message */
+  #errorLi, .error-container {
+    margin: 0 auto 25px auto;
+  }
+
+  #errorMsgLbl {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+/***** NEW *******/
+
+/* Logo */
+#logo{
+    display: none;
+}
+
+
+/* Body */
+html{
+    background-color: var(--black);
+}
+
+#public{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Textfield */
+.wufoo input.text {
+  background: var(--black);
+  color: var(--white);
+}
+
+.wufoo input.text:focus {
+    outline-style: solid;
+    outline-color: #e1be1a;
+    outline-width: medium;
+}
+
+/* Textfield title */
+.wufoo label.desc, .wufoo legend.desc {
+  color: var(--white);
+}
+
+/* Container */
+#container{
+    border: 0px;
+    background-color: var(--black);
+}
+
+/* Form text */
+form li div {
+    color: var(--white);
+}
+
+form li span {
+    color: var(--white);
+}
+
+/* Form focused */
+form li.focused {
+    background-color: var(--black);
+}
+
+/* Drop down */
+.wufoo select.select  {
+  background: var(--black) url(https://s3-ap-northeast-1.amazonaws.com/ansell/skynbun/wufoo/dropdown.svg) !important;
+  color: var(--white);
+}
+
+/* Placeholders */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--grey);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--grey);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--grey);
+}
+
+/* Radio buttons */
+input.checkbox, input.radio {
+  background: var(--black);  
+}
+
+/************/
